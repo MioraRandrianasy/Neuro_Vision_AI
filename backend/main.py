@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = load_model("brain_tumor_model.h5")
+model = load_model("brain_tumor_model.h5", compile=False)
 
 
 # =========================

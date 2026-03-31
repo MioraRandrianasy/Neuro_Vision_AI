@@ -20,4 +20,4 @@ COPY . /app/
 EXPOSE 8000
 
 # Execute Uvicorn server matching FastAPI
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
